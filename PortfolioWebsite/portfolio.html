@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<header>
+    <img class='logo' src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/headericon.svg">
+</header>
+<nav>
+    <div class="nav-items">
+        <ul>
+            <li><a href='/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/index.html'>Home</a></li>
+            <li><a href="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/about.html">About</a></li>
+            <li><a href="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>  
+</nav>
+<main>
+    <div class="portfolio-box">
+       <div class="portfolio-items">
+           <div class="portfolio-item" id="Calculator">
+               <div class="portfolio-img-background" style="background-image:url(/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/PortfolioImages/1-Calculator.png)"></div>
+               <div class="img-text">
+                   <div class="portfolio-logo">
+                       <img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/MCicon.svg">
+                   </div>
+                   <div class="subtitle">
+                       I built a calculator.
+                   </div>
+               </div>
+           </div>
+           <div class="portfolio-item" id="TickTackToe">
+                <div class="portfolio-img-background" style="background-image:url(/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/PortfolioImages/2-ticktacktoe.png)"></div>
+                <div class="img-text">
+                    <div class="portfolio-logo">
+                    <img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/MCicon.svg">
+                        </div>
+                    <div class="subtitle">
+                        I developed a Tick Tack Toe game.
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="App">
+                <div class="portfolio-img-background" style="background-image:url(/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/PortfolioImages/3-AppDevelopment.png)"></div>
+                <div class="img-text">
+                    <div class="portfolio-logo">
+                        <img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/MCicon.svg">
+                    </div>
+                    <div class="subtitle">
+                        I designed, developed, and built an app.
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="Photography">
+                <div class="portfolio-img-background" style="background-image:url(/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/PortfolioImages/4-Photography.png)"></div>
+                <div class="img-text">
+                    <div class="portfolio-logo">
+                        <img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/MCicon.svg">
+                    </div>
+                    <div class="subtitle">
+                        I designed, developed, and built a website for an NYC-based photographer.
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="MakeUp">
+                <div class="portfolio-img-background" style="background-image:url(/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/PortfolioImages/5-makeupArtist.png)"></div>
+                <div class="img-text">
+                    <div class="portfolio-logo">
+                        <img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/MCicon.svg">
+                    </div>
+                    <div class="subtitle">
+                        I designed, developed, and built a website for an established makeup artist.
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="Dentist">
+                <div class="portfolio-img-background" style="background-image:url(/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/PortfolioImages/6-dentist.png)"></div>
+                <div class="img-text">
+                    <div class="portfolio-logo">
+                        <img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/MCicon.svg">
+                    </div>
+                    <div class="subtitle">
+                        I designed, developed, and built a website for a dental practice complete with online booking and payment options.
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</main>
+<footer>
+    <div class="contact-items">
+        <ul>
+            <li><a href="mailto:mpcrockett@gmail.com"><img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/ContactLogos/emailIcon.svg" alt=""></a></li>
+            <li><a href="https://www.instagram.com/mpcrockett/"><img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/ContactLogos/InstagramLogo.svg" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/melissa-crockett-a87a40189/"><img src="/Users/melissacrockett/HardDriveDocs/Projects/PortfolioWebsite/Images/ContactLogos/linkedInLogo.svg" alt=""></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+    })
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
